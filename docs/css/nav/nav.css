@@ -96,3 +96,11 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   filter: brightness(20%);
 }
+
+.logo {
+  display: block;
+  width: 75%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
