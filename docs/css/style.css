@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Big+Shoulders+Display:wght@200&family=Big+Shoulders+Stencil+Text:wght@200&display=swap');
+
+.code-div {
+    width: auto;
+    font-family: 'Big Shoulders Display', cursive;
+}

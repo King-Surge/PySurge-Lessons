@@ -8,16 +8,20 @@
     />
 
     <title>PySurge ~ Lessons in Python</title>
-    <link rel="icon" type="image/x-icon" href="./resources/imgs/profile.jpg" />
-    <link rel="stylesheet" href="./prism/prism.css" />
-    <link rel="stylesheet" href="./css/nav/nav.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/nav/nav.js"></script>
-    <script src="./prism/prism.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../resources/imgs/profile.jpg"
+    />
+    <link rel="stylesheet" href="../../prism/prism.css" />
+    <link rel="stylesheet" href="../../css/nav/nav.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/nav/nav.js"></script>
+    <script src="../../prism/prism.js"></script>
   </head>
   <body>
     <div class="sidenav">
-      <img src="./resources/imgs/profile.jpg" class="logo" />
+      <img src="../../resources/imgs/profile.jpg" class="logo" />
       <h3 class="head">PySurge <br />Lessons In Python</h3>
 
       <button class="dropdown-btn">
@@ -25,10 +29,10 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-container">
-        <a href="#" class="activated">Home</a>
-        <a href="./pages/site-details/about-creator.html">About Creator</a>
-        <a href="./pages/site-details/purpose.html">Purpose</a>
-        <a href="./pages/site-details/credits.html">Credits</a>
+        <a href="../../index.html">Home</a>
+        <a href="../site-details/about-creator.html">About Creator</a>
+        <a href="../site-details/purpose.html">Purpose</a>
+        <a href="../site-details/credits.html">Credits</a>
       </div>
 
       <button class="dropdown-btn">
@@ -36,7 +40,7 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-container">
-        <a href="#">What is Python?</a>
+        <a class="activated" href="#">What is Python?</a>
         <a href="#">How To Set It Up?</a>
         <a href="#">First Program</a>
         <a href="#">Comments in Python</a>
@@ -124,36 +128,44 @@
     </div>
 
     <div class="main">
-      <h3 class="heading">Welcome</h3>
+      <h3 class="heading">What is Python?</h3>
       <p>
-        Welcome to the Website dedicated to teaching you the Python Programnming
-        language so that you can fully utilize the learnt knowledge to use in
-        our Integrated Development Environment <abbr>(IDE)</abbr>
-      </p>
+        Python is a high-level, general-purpose programming language, widely known for its simplicity, readability, and versatility. It was created by Guido van Rossum in the late 1980s and was first released in 1991. As an easy-to-learn language, Python is an excellent choice for beginners who are just starting to learn programming. Its design philosophy emphasizes code readability and it uses indentation instead of curly brackets to delimit blocks, making it easier to read and write. Python is an open-source language and has a large, vibrant community that continues to expand the language's capabilities. Python is often described as a "batteries included" language because of its extensive standard library, which includes modules for a wide range of tasks such as networking, data processing, and more.
 
-      <div class="code-div">
-        <pre>
-          <code class="language-python line-numbers">
-            # Simple Print Statement
-            print("Hello and Welcome to PySurge - Lessons in Python\nI hope you enjoy your stay!")
-          </code>
-        </pre>
-        <p>Output:</p>
-        <pre>
-          <code class="language-text">
-            Hello and Welcome to PySurge - Lessons in Python
-            I hope you enjoy your stay!
-          </code>
-        </pre>
-      </div>
+        <br><br>
+
+        Python follows a multi-paradigm approach to programming and supports several programming styles such as procedural, object-oriented, and functional programming. Moreover, its syntax is concise, requires fewer lines of code, and is less complex than other languages. This is partly due to the use of dynamic typing, where the interpreter determines the data type of variables at runtime. Additionally, Python supports memory management with a built-in garbage collector that automatically deallocates memory when it is no longer in use. This feature simplifies the programming process and helps reduce the risk of memory leaks.
+
+        <br><br>
+
+        Python has become a ubiquitous language in the technology industry, with use cases ranging from web development and game development to machine learning and scientific computing. Python's popularity continues to rise due to its vast range of libraries, frameworks, and tools. For instance, libraries such as NumPy, Pandas, and TensorFlow have made Python the language of choice for many data scientists, while Django and Flask have made it popular among web developers. Additionally, thanks to its easy integration with C and C++, Python is often used as a scripting language for large software projects.
+
+        <br><br>
+
+        In conclusion, Python has earned its place among the top programming languages because of its numerous benefits, including its simplicity, versatility, readability, and vast range of libraries and frameworks. Its multi-paradigm approach, dynamic typing, and powerful standard library make programming with Python an enjoyable experience. As such, Python is an excellent language for aspiring programmers and seasoned developers alike, and its many use cases make it a valuable tool for any programmer's toolkit.
+
+        <br><br>
+        </p>
+      </p>
 
       <div class="prev-next">
         <hr />
+        <button
+          onclick="window.location.href = '../site-details/credits.html'"
+          class="button right"
+        >
+          Previous Topic: What is Python?
+        </button>
 
-        <button onclick="window.location.href = './pages/site-details/about-creator.html'" class="button next">Next Topic: About Creator</button>
+        <button
+          onclick="window.location.href = './intro3.html'"
+          class="button next"
+        >
+          Next Topic: First Program
+        </button>
+
+        <br><br><br>
       </div>
-
-      <br><br><br>
     </div>
 
     <script>

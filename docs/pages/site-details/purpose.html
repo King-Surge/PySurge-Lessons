@@ -8,16 +8,20 @@
     />
 
     <title>PySurge ~ Lessons in Python</title>
-    <link rel="icon" type="image/x-icon" href="./resources/imgs/profile.jpg" />
-    <link rel="stylesheet" href="./prism/prism.css" />
-    <link rel="stylesheet" href="./css/nav/nav.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/nav/nav.js"></script>
-    <script src="./prism/prism.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../resources/imgs/profile.jpg"
+    />
+    <link rel="stylesheet" href="../../prism/prism.css" />
+    <link rel="stylesheet" href="../../css/nav/nav.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/nav/nav.js"></script>
+    <script src="../../prism/prism.js"></script>
   </head>
   <body>
     <div class="sidenav">
-      <img src="./resources/imgs/profile.jpg" class="logo" />
+      <img src="../../resources/imgs/profile.jpg" class="logo" />
       <h3 class="head">PySurge <br />Lessons In Python</h3>
 
       <button class="dropdown-btn">
@@ -25,10 +29,10 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-container">
-        <a href="#" class="activated">Home</a>
-        <a href="./pages/site-details/about-creator.html">About Creator</a>
-        <a href="./pages/site-details/purpose.html">Purpose</a>
-        <a href="./pages/site-details/credits.html">Credits</a>
+        <a href="../../index.html">Home</a>
+        <a href="./about-creator.html">About Creator</a>
+        <a class="activated" href="#">Purpose</a>
+        <a href="./credits.html">Credits</a>
       </div>
 
       <button class="dropdown-btn">
@@ -124,36 +128,56 @@
     </div>
 
     <div class="main">
-      <h3 class="heading">Welcome</h3>
+      <h3 class="heading">Purpose</h3>
       <p>
-        Welcome to the Website dedicated to teaching you the Python Programnming
-        language so that you can fully utilize the learnt knowledge to use in
-        our Integrated Development Environment <abbr>(IDE)</abbr>
-      </p>
+        As a Python enthusiast and an experienced programmer, creating a website
+        to teach Python was a logical extension of my interests. I wanted to
+        share my knowledge of this versatile programming language with people
+        who are new to Python, and show them how to use it to create robust,
+        scalable applications. Python's popularity has grown exponentially over
+        the years and there are many use cases ranging from web development,
+        game development to data science, and machine learning. With this
+        website, I aim to demystify the learning curve associated with Python
+        and enable new programmers to kickstart their journey by learning Python
+        effectively and efficiently. 
+        
+        <br><br>
+        
+        Furthermore, with the fast-paced
+        technological developments in today's world, mastering a versatile
+        programming language like Python has become a critical skill. Many
+        industries, like finance, healthcare, and even government, have started
+        using Python to automate their workflows and processes, making the
+        demand for Python developers stronger than ever. With my website, I hope
+        to equip aspiring programmers with the skills and knowledge needed to
+        thrive in the ever-evolving world of software development. So, whether
+        it's creating an application from scratch, or getting a well-paid job in
+        the tech industry, learning Python can open countless doors for personal
+        growth and career success.
 
-      <div class="code-div">
-        <pre>
-          <code class="language-python line-numbers">
-            # Simple Print Statement
-            print("Hello and Welcome to PySurge - Lessons in Python\nI hope you enjoy your stay!")
-          </code>
-        </pre>
-        <p>Output:</p>
-        <pre>
-          <code class="language-text">
-            Hello and Welcome to PySurge - Lessons in Python
-            I hope you enjoy your stay!
-          </code>
-        </pre>
-      </div>
+        <br><br>
+
+        The creation of this website was also aimed to teach you the language so you copuld utilize the knowledge to code inside our Python IDE <abbr>(PySurge)</abbr>
+      </p>
 
       <div class="prev-next">
         <hr />
+        <button
+          onclick="window.location.href = './about-creator.html'"
+          class="button right"
+        >
+          Previous Topic: About Creator
+        </button>
 
-        <button onclick="window.location.href = './pages/site-details/about-creator.html'" class="button next">Next Topic: About Creator</button>
+        <button
+          onclick="window.location.href = './credits.html'"
+          class="button next"
+        >
+          Next Topic: Credits
+        </button>
+
+        <br><br><br>
       </div>
-
-      <br><br><br>
     </div>
 
     <script>

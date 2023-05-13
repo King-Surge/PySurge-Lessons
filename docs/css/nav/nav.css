@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Big+Shoulders+Display:wght@200&family=Big+Shoulders+Stencil+Text:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap");
+
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Dosis', sans-serif;
+*/
+
 .active {
   background-color: green;
   color: white;
@@ -59,19 +70,19 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: beige;
+  background-color: #4b515d;
 }
 
 /* Main content */
 .main {
-  margin-left: 230px; /* Same as the width of the sidenav */
+  margin-left: 245px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
 .sidenav {
   height: 100%;
-  width: 230px;
+  width: 245px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -92,9 +103,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: lightgreen;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   filter: brightness(20%);
+  background-color: white;
 }
 
 .logo {
@@ -103,4 +114,76 @@ body {
   height: 30%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.heading {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 30px;
+  color: lightcoral;
+}
+
+.sub-heading {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  color: lightcoral;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.button {
+  padding: 15px 25px;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+  transition: 0.4s;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+hr {
+  border-top: 3px dotted;
+  border-bottom: none;
+  color: lightcoral;
+}
+
+.next {
+  float: right;
+}
+
+.right {
+  float: left;
+}
+
+.dropdown-container .activated {
+  color: lightgreen;
+}
+
+.link {
+  color: lightcoral;
+  font-style: italic;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+}
+
+li {
+  color: white;
 }

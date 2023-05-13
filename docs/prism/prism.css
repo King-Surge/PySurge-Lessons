@@ -4,10 +4,10 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
   background: 0 0;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1em;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  font-weight: 600;
   text-align: left;
-  white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
