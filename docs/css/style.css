@@ -5,3 +5,12 @@
     width: auto;
     font-family: 'Big Shoulders Display', cursive;
 }
+
+.tab-bar {
+    width: auto;
+    font-size: 18px;
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: #2d2d2d;
+    color: white;
+    font-weight: 400;
+}

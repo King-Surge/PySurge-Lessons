@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>PySurge ~ Lessons in Python</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../resources/imgs/profile.jpg"
+    />
+    <link rel="stylesheet" href="../../prism/prism.css" />
+    <link rel="stylesheet" href="../../css/nav/nav.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/nav/nav.js"></script>
+    <script src="../../prism/prism.js"></script>
+  </head>
+  <body>
+    <div class="sidenav">
+      <img src="../../resources/imgs/profile.jpg" class="logo" />
+      <h3 class="head">PySurge <br />Lessons In Python</h3>
+
+      <button class="dropdown-btn">
+        Site Details
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../../index.html">Home</a>
+        <a href="../site-details/about-creator.html">About Creator</a>
+        <a href="../site-details/purpose.html">Purpose</a>
+        <a href="../site-details/credits.html">Credits</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Introduction
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./intro1.html">What is Python?</a>
+        <a href="./intro2.html">How To Set It Up?</a>
+        <a class="activated" href="#">First Program</a>
+        <a href="./intro4.html">Comments in Python</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Diving In
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Keywords and Identifiers</a>
+        <a href="#">Python Namespaces</a>
+        <a href="#">Python Variables</a>
+        <a href="#">Python Data Types</a>
+        <a href="#">Python Input And Output</a>
+        <a href="#">Operators in Python</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Python Statements
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">if...else statement</a>
+        <a href="#">for loops</a>
+        <a href="#">while loops</a>
+        <a href="#">pass</a>
+        <a href="#">break and continue</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Python Functions
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Introduction</a>
+        <a href="#">Function Arguments</a>
+        <a href="#">Recursions</a>
+        <a href="#">Anonymous Function</a>
+        <a href="#">Local, Global and Nonlocal</a>
+        <a href="#">Global Keyword</a>
+        <a href="#">Modules in Python</a>
+        <a href="#">Python Package</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Data Types
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Numbers</a>
+        <a href="#">List</a>
+        <a href="#">Tuple</a>
+        <a href="#">String</a>
+        <a href="#">Dictionary</a>
+        <a href="#">Set</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Files in Python
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">File Operation</a>
+        <a href="#">Exception</a>
+        <a href="#">Exception Handling</a>
+        <a href="#">User-Defined Exception</a>
+        <a href="#">Dictionary</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Classes and Objects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Python OOP</a>
+        <a href="#">File Operation</a>
+        <a href="#">Classes and Objects</a>
+        <a href="#">Python Inheritance</a>
+        <a href="#">Multiple Inheritance</a>
+        <a href="#">Operator Overloading</a>
+      </div>
+
+      <br />
+    </div>
+
+    <div class="main">
+      <h3 class="heading">First Program</h3>
+      <p>
+        In Python your first program may feel like one of your gratest
+        achievements. Though very simple, Everyone enjoys doing their first
+        "Hello, World!" program. 
+        
+        <br><br>
+        
+        In a "Hello, World!" program all you would be
+        doing is printing hello world to the console. You may have seen an
+        example of this on the home page.
+
+        <br><br>
+
+        Python files usually have the extension "*.py". 
+        
+        <br><br>
+
+        "*" represents the name of the file
+      </p>
+
+      <div class="code-div">
+        <button class="tab-bar">helloworld.py</button>
+        <pre>
+          <code class="language-python line-numbers">
+            print("Hello, World!")
+          </code>
+        </pre>
+        <p>Output:</p>
+        <pre>
+          <code class="language-text">
+            Hello, World!
+          </code>
+        </pre>
+      </div>
+
+      <div class="prev-next">
+        <hr />
+        <button
+          onclick="window.location.href = './intro2.html'"
+          class="button right"
+        >
+          Previous Topic: How to set it up?
+        </button>
+
+        <button
+          onclick="window.location.href = './intro4.html'"
+          class="button next"
+        >
+          Next Topic: Python Comments
+        </button>
+
+        <br /><br /><br />
+      </div>
+    </div>
+
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

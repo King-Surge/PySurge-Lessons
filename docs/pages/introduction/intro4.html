@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>PySurge ~ Lessons in Python</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../resources/imgs/profile.jpg"
+    />
+    <link rel="stylesheet" href="../../prism/prism.css" />
+    <link rel="stylesheet" href="../../css/nav/nav.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../js/nav/nav.js"></script>
+    <script src="../../prism/prism.js"></script>
+  </head>
+  <body>
+    <div class="sidenav">
+      <img src="../../resources/imgs/profile.jpg" class="logo" />
+      <h3 class="head">PySurge <br />Lessons In Python</h3>
+
+      <button class="dropdown-btn">
+        Site Details
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="../../index.html">Home</a>
+        <a href="../site-details/about-creator.html">About Creator</a>
+        <a href="../site-details/purpose.html">Purpose</a>
+        <a href="../site-details/credits.html">Credits</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Introduction
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./intro1.html">What is Python?</a>
+        <a href="./intro2.html">How To Set It Up?</a>
+        <a href="./intro3.html">First Program</a>
+        <a class="activated" href="#">Comments in Python</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Diving In
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Keywords and Identifiers</a>
+        <a href="#">Python Namespaces</a>
+        <a href="#">Python Variables</a>
+        <a href="#">Python Data Types</a>
+        <a href="#">Python Input And Output</a>
+        <a href="#">Operators in Python</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Python Statements
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">if...else statement</a>
+        <a href="#">for loops</a>
+        <a href="#">while loops</a>
+        <a href="#">pass</a>
+        <a href="#">break and continue</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Python Functions
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Introduction</a>
+        <a href="#">Function Arguments</a>
+        <a href="#">Recursions</a>
+        <a href="#">Anonymous Function</a>
+        <a href="#">Local, Global and Nonlocal</a>
+        <a href="#">Global Keyword</a>
+        <a href="#">Modules in Python</a>
+        <a href="#">Python Package</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Data Types
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Numbers</a>
+        <a href="#">List</a>
+        <a href="#">Tuple</a>
+        <a href="#">String</a>
+        <a href="#">Dictionary</a>
+        <a href="#">Set</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Files in Python
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">File Operation</a>
+        <a href="#">Exception</a>
+        <a href="#">Exception Handling</a>
+        <a href="#">User-Defined Exception</a>
+        <a href="#">Dictionary</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Classes and Objects
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Python OOP</a>
+        <a href="#">File Operation</a>
+        <a href="#">Classes and Objects</a>
+        <a href="#">Python Inheritance</a>
+        <a href="#">Multiple Inheritance</a>
+        <a href="#">Operator Overloading</a>
+      </div>
+
+      <br />
+    </div>
+
+    <div class="main">
+      <h3 class="heading">Python Comments</h3>
+      <p>
+        You've successfully completed your first program and would like to make
+        notes explaining what your code does. However, you do not want your
+        notes to be displayed in the console. Comments allow for you to this.
+
+        <br /><br />
+
+        Code written with Python can be explained through comments. Comments can
+        be used to enhance the readability of the code. When testing code,
+        comments can be used to prevent execution.
+
+        <br><br>
+
+        There are three types of comments: single-line, multi-line, and docstring comments. The syntax of comments varies depending on the type.
+
+        <br><br>
+        
+        Single-line comments begin with the “#” character. Anything that is written in a single line after ‘#’ is considered as a comment. 
+
+        There are two ways of using single-line comments in Python. You can use it before the code or next to the code.
+
+        <br><br>
+
+        In the code below only line 2 will be executed up to where the comment starts
+
+      </p>
+
+      <div class="code-div">
+        <button class="tab-bar">comments.py</button>
+        <pre>
+          <code class="language-python line-numbers">
+            # This is my first single-line comment
+            print("Hello, World!") # look I can be here too
+            # print("this will not be printed") 
+          </code>
+        </pre>
+        <p>Output:</p>
+        <pre>
+          <code class="language-text">
+            Hello, World!
+          </code>
+        </pre>
+      </div>
+
+      <p>
+        Python does not support multi-line comments. However, there are multiple ways to overcome this issue. This method is technically multi-line single-line comments. The first way is by using # at the beginning of each line of the comment.
+
+        <br><br>
+
+        You can also use multi-line strings for commenting. To do this, use either a ‘’ or “” quotation marks three times.
+
+        <br><br>
+
+        The next way is by using string literals but not assigning them to any variables (Learn further in the Course). If you do not assign a string literal to a variable, the Python interpreter ignores it. Use this to your advantage to write multi-line comments. You can either use a single (‘’) quotation or double (“”) quotation.
+
+        <br><br>
+
+        In the code below you will see examples of these
+
+      </p>
+
+      <div class="code-div">
+        <button class="tab-bar">comments.py</button>
+        <pre>
+          <code class="language-python line-numbers">
+            # These
+            # are multi-line
+            # single-line
+            # comments
+
+
+            """
+            This is method 
+            number 2
+            """
+
+            "This is method"
+            "number 3"
+          </code>
+        </pre>
+      </div>
+
+      <div class="prev-next">
+        <hr />
+        <button
+          onclick="window.location.href = './intro2.html'"
+          class="button right"
+        >
+          Previous Topic: First Program
+        </button>
+
+        <button
+          onclick="window.location.href = '../diving-in/dive1.html'"
+          class="button next"
+        >
+          Next Topic: Keywords and Identifiers
+        </button>
+
+        <br /><br /><br />
+      </div>
+    </div>
+
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
